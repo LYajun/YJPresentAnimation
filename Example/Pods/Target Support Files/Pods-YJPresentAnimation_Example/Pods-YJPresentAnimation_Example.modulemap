@@ -1,0 +1,6 @@
+framework module Pods_YJPresentAnimation_Example {
+  umbrella header "Pods-YJPresentAnimation_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

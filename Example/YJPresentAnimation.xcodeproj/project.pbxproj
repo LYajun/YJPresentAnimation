@@ -39,8 +39,8 @@
 /* Begin PBXFileReference section */
 		0E1A8CD6C94627E697658B75 /* Pods_YJPresentAnimation_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YJPresentAnimation_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3017200D2C39BAE7B0E94178 /* Pods-YJPresentAnimation_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJPresentAnimation_Example.debug.xcconfig"; path = "Target Support Files/Pods-YJPresentAnimation_Example/Pods-YJPresentAnimation_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		33932E30FCEEC80FF3565AF9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		39A88422E3DE47AA009A4737 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		33932E30FCEEC80FF3565AF9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		39A88422E3DE47AA009A4737 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* YJPresentAnimation_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YJPresentAnimation_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -66,7 +66,7 @@
 		A51B3CD8FD7EFFAEE8EDAB21 /* Pods-YJPresentAnimation_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJPresentAnimation_Example.release.xcconfig"; path = "Target Support Files/Pods-YJPresentAnimation_Example/Pods-YJPresentAnimation_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B5CBB2416150DD3BAF1B65D4 /* Pods_YJPresentAnimation_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YJPresentAnimation_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C790183F17E51E5C35BC20F0 /* Pods-YJPresentAnimation_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJPresentAnimation_Tests.debug.xcconfig"; path = "Target Support Files/Pods-YJPresentAnimation_Tests/Pods-YJPresentAnimation_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		FDBF7B40404EB40FA678D2F7 /* YJPresentAnimation.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YJPresentAnimation.podspec; path = ../YJPresentAnimation.podspec; sourceTree = "<group>"; };
+		FDBF7B40404EB40FA678D2F7 /* YJPresentAnimation.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YJPresentAnimation.podspec; path = ../YJPresentAnimation.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,6 @@
 				C790183F17E51E5C35BC20F0 /* Pods-YJPresentAnimation_Tests.debug.xcconfig */,
 				9082FB5C8DEB49730660F28F /* Pods-YJPresentAnimation_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -248,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = lyj;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = Z35S33J39R;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -494,6 +496,7 @@
 			baseConfigurationReference = 3017200D2C39BAE7B0E94178 /* Pods-YJPresentAnimation_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z35S33J39R;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YJPresentAnimation/YJPresentAnimation-Prefix.pch";
 				INFOPLIST_FILE = "YJPresentAnimation/YJPresentAnimation-Info.plist";
@@ -510,6 +513,7 @@
 			baseConfigurationReference = A51B3CD8FD7EFFAEE8EDAB21 /* Pods-YJPresentAnimation_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z35S33J39R;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YJPresentAnimation/YJPresentAnimation-Prefix.pch";
 				INFOPLIST_FILE = "YJPresentAnimation/YJPresentAnimation-Info.plist";
