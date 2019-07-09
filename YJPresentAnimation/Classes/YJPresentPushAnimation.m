@@ -10,7 +10,7 @@
 @implementation YJPresentPushAnimation
 
 - (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext{
-    return 0.5f;
+    return 0.4f;
 }
 
 - (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext{
@@ -23,20 +23,21 @@
     CGRect fromVCRect = fromVC.view.frame;
     fromVCRect.origin.x = 0;
     fromVC.view.frame = fromVCRect;
-    
     [container addSubview:toVC.view];
+    
     CGRect toVCRect = toVC.view.frame;
-    toVCRect.origin.x = -screenWidth;
+    toVCRect.origin.x = screenWidth;
     toVC.view.frame = toVCRect;
     
-    fromVCRect.origin.x = screenWidth;
+    fromVCRect.origin.x = -screenWidth;
     toVCRect.origin.x = 0;
     
     [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
         fromVC.view.frame = fromVCRect;
         toVC.view.frame = toVCRect;
     } completion:^(BOOL finished){
-        [transitionContext completeTransition:![transitionContext transitionWasCancelled]];//动画结束、取消必须调用
+        [fromVC.view removeFromSuperview];
+        [transitionContext completeTransition:finished];//动画结束、取消必须调用
     }];
     
 }
