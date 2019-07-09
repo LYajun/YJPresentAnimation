@@ -1,20 +1,17 @@
 //
-//  YJPresentPushAnimation.m
+//  YJPresentPopAnimation.m
+//  Pods-YJPresentAnimation_Example
 //
-//  Created by 刘亚军 on 2018/12/27.
-//  Copyright © 2018年 刘亚军. All rights reserved.
+//  Created by 刘亚军 on 2019/7/9.
 //
 
-#import "YJPresentPushAnimation.h"
+#import "YJPresentPopAnimation.h"
 
-@implementation YJPresentPushAnimation
-
-- (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext{
+@implementation YJPresentPopAnimation
+- (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext {
     return 0.5f;
 }
-
-- (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext{
-    
+- (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext {
     UIViewController *fromVC = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
     UIViewController *toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
     UIView *container = [transitionContext containerView];
@@ -38,7 +35,5 @@
     } completion:^(BOOL finished){
         [transitionContext completeTransition:![transitionContext transitionWasCancelled]];//动画结束、取消必须调用
     }];
-    
 }
-
 @end

@@ -10,7 +10,8 @@
 #endif
 #endif
 
-#import "TPFPresentPushAnimation.h"
+#import "YJPresentPopAnimation.h"
+#import "YJPresentPushAnimation.h"
 
 FOUNDATION_EXPORT double YJPresentAnimationVersionNumber;
 FOUNDATION_EXPORT const unsigned char YJPresentAnimationVersionString[];

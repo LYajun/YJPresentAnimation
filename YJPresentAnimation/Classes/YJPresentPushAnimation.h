@@ -10,6 +10,6 @@
 
 @interface YJPresentPushAnimation : NSObject <UIViewControllerAnimatedTransitioning>
 
-@property (nonatomic, assign) BOOL isPresent;
+
 
 @end

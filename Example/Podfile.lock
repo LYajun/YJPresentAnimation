@@ -1,5 +1,5 @@
 PODS:
-  - YJPresentAnimation (1.0.0)
+  - YJPresentAnimation (1.0.1)
 
 DEPENDENCIES:
   - YJPresentAnimation (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  YJPresentAnimation: 98b8632a33eb0d98c3f28cfe2d3e006e91ea1e61
+  YJPresentAnimation: ab479032e709ce17731210ceef92fe34d3c0598b
 
 PODFILE CHECKSUM: 6dceb2316f7db335de16f85823c79bcf2f0c52b6
 
